@@ -56,8 +56,8 @@ python scripts/train_cub_backbone.py --cub-dir <CUB_200_2011> --weights <incepti
 Each configuration in the paper is a file `configs/<task>/<group>/<name>.yaml`, with `<task>` one of `aircraft`,
 `carracing`, and `cub200`. The groups are:
 
-- `width64/`: the models of Tables 1 and 2 and the encoder-width-64 rows of Appendix H.
-- `width256/`: the other ablations of Appendix H.
+- `width64/`: the models of Tables 1 and 2 and the encoder-width-64 rows of Appendix I.
+- `width256/`: the other ablations of Appendix I.
 - `cwnet/`: CW-Net and its variants.
 - `disentanglement/`: β-TCVAE and iVAE.
 - `cub200/` holds the two models of Table 3 directly.
