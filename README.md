@@ -39,7 +39,7 @@ Put the datasets under one data root (`data/` by default). Each directory holds 
 
 | Directory | Task | Arrays | Source |
 |---|---|---|---|
-| `500K/`, `5K/`, `50K/`, `5M/` | Aircraft control | `observations`, `latent`, `action`, `leadlag`, `climbdive` | Generated with the F-16 environment of So and Fan (RSS 2023), [jax-f16](https://github.com/MIT-REALM/jax-f16), which implements the F-16 model of Heidlauf et al. (ARCH 2018). To be posted on this repository's Releases page |
+| `500K/`, `5K/`, `50K/`, `5M/` | Aircraft control | `observations`, `latent`, `action`, `leadlag`, `climbdive` | Generated with the F-16 environment of So and Fan (RSS 2023), [jax-f16](https://github.com/MIT-REALM/jax-f16), which implements the F-16 model of Heidlauf et al. (ARCH 2018). Download from the [v1.0 release](https://github.com/squarebush/ccw-net-neurips2026/releases/tag/v1.0) |
 | `carracing/` | CarRacing | `latent`, `action`, `concept` | From the CW-Net release of Kenny et al. (2026, CC0). Download `code_ocean_capsule/data/` from [CW-Net-Autonomous-Driving](https://github.com/EoinKenny/CW-Net-Autonomous-Driving) and run `python scripts/preprocess_carracing.py --src <that folder>` |
 | `cub200_finetuned/` | CUB-200 | `latent`, `class`, `concept` | Built from CUB-200-2011 with the two commands below |
 
@@ -72,7 +72,7 @@ python -m ccw_net.scoring --runs runs --scores results/scores --data-root data -
 `bash reproduce.sh` trains and scores every configuration and seed, then prints the tables with
 `python -m ccw_net.tables --scores results/scores`.
 
-The trained runs will be posted on the Releases page. Scoring them as above reproduces `scores/` exactly. Training on a
+The trained runs will be posted on the [Releases page](https://github.com/squarebush/ccw-net-neurips2026/releases). Scoring them as above reproduces `scores/` exactly. Training on a
 GPU is not bitwise deterministic, so retrained models reproduce the tables within seed-to-seed variation.
 
 ## Citation
