@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ccw_net"
+version = "1.0.0"
+description = "Code for Causal Concept Explanations for Deep Neural Models (NeurIPS 2026)"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Josh Rountree"},
+    {name = "Pulkit Verma"},
+    {name = "Oswin So"},
+    {name = "Chuchu Fan"},
+    {name = "Julie A. Shah"},
+]
+dependencies = [
+    "torch==2.9.1",
+    "torchvision==0.24.1",
+    "numpy==2.2.6",
+    "scipy==1.15.2",
+    "scikit-learn==1.7.2",
+    "omegaconf==2.3.0",
+    "pyyaml>=6.0",
+    "tqdm>=4.65",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,0 +1,22 @@
+train:
+  epochs: 100
+  batch_size: 2048
+  lr: 0.0005
+  grad_clip: 1.0
+stress_test:
+  remove_concept: null
+  merge_concept: null
+  label_noise: 0.0
+  add_placebo: false
+  label_fraction: 1.0
+system:
+  data_root: ???
+model:
+  name: btcvae
+  concept_dim: 16
+  hidden_dim: 256
+  num_concepts: 4
+  beta: 6.0
+dataset:
+  data_subdir: 500K
+  domain: f16

@@ -1,0 +1,56 @@
+{
+ "mse": 0.008256259374320507,
+ "acc_ll": 0.34907326102256775,
+ "acc_cd": null,
+ "dci": {
+  "disentanglement": 0.5475774257584044,
+  "completeness": 0.6496247151972281,
+  "informativeness": 0.9551140544518028
+ },
+ "slots": [
+  "Straight",
+  "Left",
+  "Right"
+ ],
+ "states": {
+  "Straight": {
+   "pm": [
+    0.0,
+    0.28911996937267737,
+    0.7108800306273226
+   ],
+   "pm_active": null,
+   "pm_forbidden": 1.0,
+   "active_slots": []
+  },
+  "Left": {
+   "pm": [
+    0.0,
+    0.3298394399161452,
+    0.6701605600838547
+   ],
+   "pm_active": 0.3298394399161452,
+   "pm_forbidden": 0.6701605600838547,
+   "active_slots": [
+    1
+   ]
+  },
+  "Right": {
+   "pm": [
+    0.0,
+    0.3227993418259925,
+    0.6772006581740074
+   ],
+   "pm_active": 0.6772006581740074,
+   "pm_forbidden": 0.3227993418259925,
+   "active_slots": [
+    2
+   ]
+  }
+ },
+ "overall": {
+  "pm_active": 0.43430574689221024,
+  "pm_forbidden": 0.5656942531077898
+ },
+ "unscored_states": []
+}

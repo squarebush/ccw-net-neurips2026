@@ -1,0 +1,44 @@
+data:
+  covariates: latents
+  val_stratify: aligned
+train:
+  epochs: 100
+  batch_size: 2048
+  lr: 0.0005
+  grad_clip: 1.0
+  warmup_epochs: 10
+  alignment_losses:
+  - causal_mediation
+  lambda_necessary: 1.0
+  lambda_sufficient: 1.0
+  lambda_independent: 1.0
+  lambda_presence: 1.0
+  presence_beta: 0.5
+  align_weight: 0.1
+  cls_weight: 1.0
+  mse_weight: 1.0
+  mc_samples: 8
+  flow:
+    hidden_dim: 256
+    num_coupling_layers: 8
+    lr: 0.001
+    grad_clip: 1.0
+    batch_size: null
+    pretrain_epochs: 50
+    refresh_every: 10
+stress_test:
+  remove_concept: null
+  merge_concept: null
+  label_noise: 0.1
+  add_placebo: false
+  label_fraction: 1.0
+system:
+  data_root: ???
+model:
+  name: squash_attention
+  concept_dim: 16
+  hidden_dim: 64
+  num_concepts: 4
+dataset:
+  data_subdir: 500K
+  domain: f16

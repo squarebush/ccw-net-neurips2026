@@ -1,0 +1,21 @@
+train:
+  epochs: 50
+  batch_size: 32
+  lr: 0.001
+  grad_clip: 1.0
+stress_test:
+  remove_concept: null
+  merge_concept: null
+  label_noise: 0.0
+  add_placebo: false
+  label_fraction: 1.0
+system:
+  data_root: ???
+model:
+  name: ivae
+  concept_dim: 1
+  hidden_dim: 256
+  num_concepts: 3
+dataset:
+  data_subdir: carracing
+  domain: carracing

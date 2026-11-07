@@ -1,0 +1,42 @@
+train:
+  epochs: 50
+  batch_size: 32
+  lr: 0.001
+  lr_decay: 0.99
+  mse_weight: 100.0
+  grad_clip: 0.0
+  warmup_epochs: 10
+  alignment_losses:
+  - causal_mediation
+  lambda_necessary: 1.0
+  lambda_sufficient: 1.0
+  lambda_independent: 1.0
+  lambda_presence: 1.0
+  presence_beta: 0.5
+  align_weight: 0.1
+  mc_samples: 8
+  flow:
+    hidden_dim: 256
+    num_coupling_layers: 8
+    lr: 0.001
+    grad_clip: 1.0
+    batch_size: 2048
+    pretrain_epochs: 50
+    refresh_every: 10
+  align_checkpoint: false
+stress_test:
+  remove_concept: null
+  merge_concept: null
+  label_noise: 0.0
+  add_placebo: false
+  label_fraction: 1.0
+system:
+  data_root: ???
+model:
+  name: cwnet
+  concept_dim: 1
+  num_concepts: 3
+  output_activation: carracing
+dataset:
+  data_subdir: carracing
+  domain: carracing

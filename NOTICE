@@ -1,0 +1,20 @@
+This repository includes material adapted from third-party sources.
+
+src/ccw_net/models/cwnet.py is adapted from the CW-Net class in
+code_ocean_capsule/code/main.py of https://github.com/EoinKenny/CW-Net-Autonomous-Driving,
+released with Kenny et al., "Explainable deep learning improves human mental models of
+self-driving cars", Nature, 2026. Copyright 2026 Motional. Licensed under the Apache
+License, Version 2.0 (LICENSES/Apache-2.0.txt). The file was modified for this
+repository. Earlier versions of that code (Code Ocean capsule 8602909) were released under
+the MIT License, Copyright (c) 2024 Eoin Kenny. The upstream NOTICE states: "This work was
+conducted in collaboration with Motional, the Massachusetts Institute of Technology, and
+Harvard University."
+
+src/ccw_net/disentanglement_lib_compat.py implements the DCI metric after the definitions
+of google-research/disentanglement_lib (Apache-2.0).
+
+scripts/preprocess_cub.py and scripts/train_cub_backbone.py follow the concept bottleneck
+setup of Koh et al. (2020), https://github.com/yewsiang/ConceptBottleneck (MIT).
+
+The CarRacing data used by this repository come from code_ocean_capsule/data/ of the same
+CW-Net release and are dedicated to the public domain under CC0 1.0 Universal.

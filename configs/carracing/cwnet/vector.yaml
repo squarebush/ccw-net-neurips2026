@@ -1,0 +1,24 @@
+train:
+  epochs: 50
+  batch_size: 32
+  lr: 0.001
+  lr_decay: 0.99
+  mse_weight: 100.0
+  grad_clip: 0.0
+  alignment_losses: []
+stress_test:
+  remove_concept: null
+  merge_concept: null
+  label_noise: 0.0
+  add_placebo: false
+  label_fraction: 1.0
+system:
+  data_root: ???
+model:
+  name: cwnet
+  concept_dim: 16
+  num_concepts: 3
+  output_activation: carracing
+dataset:
+  data_subdir: carracing
+  domain: carracing

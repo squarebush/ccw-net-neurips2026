@@ -1,0 +1,36 @@
+{
+ "mse": 0.0020226992201060057,
+ "acc_ll": 0.8464254140853882,
+ "acc_cd": null,
+ "dci": {
+  "disentanglement": 0.6106221365190324,
+  "completeness": 0.4565443349109837,
+  "informativeness": 0.9242089771891097
+ },
+ "slots": [
+  "Straight",
+  "Left",
+  "Right"
+ ],
+ "states": {
+  "Straight|Right": {
+   "pm": [
+    0.8525156731896799,
+    0.14746755569672787,
+    1.6771113592081836e-05
+   ],
+   "pm_active": 0.8525156731896799,
+   "pm_forbidden": 0.14748432681031995,
+   "active_slots": [
+    0
+   ]
+  }
+ },
+ "overall": {
+  "pm_active": 0.8525156731896799,
+  "pm_forbidden": 0.14748432681031995
+ },
+ "unscored_states": [
+  "Left"
+ ]
+}

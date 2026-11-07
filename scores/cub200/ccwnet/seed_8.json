@@ -1,0 +1,13 @@
+{
+ "mse": 5.289380073547363,
+ "acc_ll": 0.9962902665138245,
+ "dci": {
+  "disentanglement": 0.9045642317980634,
+  "completeness": 0.9461800335751563,
+  "informativeness": 0.9935095205651379
+ },
+ "attribution": {
+  "pm_active": 0.909847516507741,
+  "pm_forbidden": 0.090152483492259
+ }
+}
